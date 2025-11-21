@@ -1,0 +1,45 @@
+/* Tailwind imports */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Optional: icon cursor */
+i {
+  cursor: pointer;
+}
+
+/* --- NEW PASTEL UI STYLE --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+  --pastel-pink: #FDE8F2;
+  --pastel-mint: #E8FFF4;
+  --pastel-blue: #E8F0FF;
+  --pastel-lavender: #F1E8FF;
+  --card-bg: #ffffff;
+  --muted: #6b7280;
+}
+
+/* Light pastel background */
+body {
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg, #FBFBFD 0%, #F6F8FF 100%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* subtle card shadow */
+.soft-card {
+  box-shadow: 0 6px 20px rgba(20,24,40,0.06);
+  border: 1px solid rgba(99,102,241,0.04);
+}
+
+/* pastel ring */
+.pastel-ring {
+  box-shadow: 0 0 0 6px rgba(99,102,241,0.04);
+}
+
+/* helper */
+.center-screen {
+  min-height: calc(100vh - 4rem);
+}
